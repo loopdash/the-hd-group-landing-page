@@ -33,7 +33,7 @@ body{
 .banner-text-container {
     position: absolute;
     max-width: 476px;
-    width: 100%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -97,6 +97,12 @@ body{
     font-family: "Raleway", system-ui;
     text-transform: uppercase;
     text-align: center;
+    transition: all .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.banner-btn-wrap .hero-btn:hover {
+    background: #fff;
+    color: #000;
 }
 
 
@@ -104,9 +110,29 @@ body{
 
 
 /*Responsive*/
+@media only screen and (max-width: 1366px) {
+    .banner-bg-text {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .slider-img-container img {
+        height: 50vh;
+    }
+    .slick-slide > div {
+        line-height: 0;
+    }
+
+    .banner-bg-text {
+        font-size: 60px;
+    }
+    
+}
+
 @media only screen and (max-width: 600px) {
     .banner-bg-text {
-        font-size: 50px;
+        font-size: 40px;
     }
     .banner-sm-text {
         font-size: 10px;
@@ -117,11 +143,9 @@ body{
     }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1366px) {
-    .banner-bg-text {
-        font-size: 5vw;
-    }
-}
+
+
+
 
 
 
