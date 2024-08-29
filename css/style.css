@@ -29,6 +29,7 @@ body{
 
 .hero-slider .slide .slide-inner {
     position: relative;
+    line-height: 0;
 }
 .banner-text-container {
     position: absolute;
@@ -117,6 +118,10 @@ body{
 }
 
 @media only screen and (max-width: 900px) {
+    .hero-slider {
+        display: flex;
+        flex-direction: column;
+    }
     .slider-img-container img {
         height: 50vh;
     }
@@ -142,6 +147,7 @@ body{
         margin-top: 30px;
     }
 }
+
 
 
 
