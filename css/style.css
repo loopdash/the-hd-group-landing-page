@@ -40,7 +40,15 @@ body{
     transform: translate(-50%, -50%);
     z-index: 99;
 }
-
+.banner-text-wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-text-wrap svg {
+    width: 400px;
+    height: auto;
+    max-height: 80px;
+}
 .slider-img-container {
     position: relative;
 }
